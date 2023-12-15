@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-ypgy
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-ubni-tenant/test-app-lulz/devfile-sample-python-basic-ypgy@sha256:8af0c87cc13dc063a8b87db795369d4b8cb2df2bbaf2fe07237152f31b63e7e5
+        name: my-python
+        resources: {}
+status: {}
